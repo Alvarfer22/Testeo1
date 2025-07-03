@@ -26,7 +26,7 @@ Puedes abrir el proyecto directamente en Google Colab:
 
 ## 🖼️ Ejemplo de imagen procesada
 
-![Ejemplo](img/ejemplo_resultado.jpg)
+
 ![Madrid_Canny](https://github.com/user-attachments/assets/f0cc37cc-3bde-40d8-a1b7-0157ab405710)
 
 ---
