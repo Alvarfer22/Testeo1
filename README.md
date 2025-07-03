@@ -52,9 +52,4 @@ Puedes abrir el proyecto directamente en Google Colab:
 
 ---
 
-## 🧠 Consejo
-Puedes hacer que se vea aún más llamativo si añades un logo, una imagen de portada, o incluso una tabla de progreso con tareas pendientes (`- [ ] Tarea pendiente`, `- [x] Tarea completada`).
 
----
-
-¿Quieres que lo convierta directamente en archivo `README.md` con tu info y enlace a tu Colab o lo adaptamos un poco más antes?
