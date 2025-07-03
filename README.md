@@ -11,16 +11,21 @@ Puedes abrir el proyecto directamente en Google Colab:
 
 ## 🧪 Detectores incluidos
 
-| Detector         | Técnica          | Comentario útil                                         |
-|------------------|------------------|---------------------------------------------------------|
-| Sobel            | Borde            | Realza cambios de intensidad en direcciones x e y      |
-| Canny            | Borde            | Muy eficaz para bordes nítidos                         |
-| Harris           | Esquinas         | Detecta esquinas basándose en gradientes               |
-| Shi-Tomasi       | Esquinas         | Mejor que Harris para selección de puntos de interés   |
-| ORB              | Características  | Detecta y describe con buen rendimiento                |
-| FAST             | Características  | Muy rápido, ideal para tiempo real                     |
-| LBP              | Textura          | Captura patrones locales de textura                    |
-| GLCM             | Textura          | Analiza relaciones de intensidad entre píxeles         |
+# Comparativa de detectores de características en imágenes
+
+| Detector      | Tipo             | Sensibilidad | Dirección | Escalable | Comentarios (¿Para qué sirve?)                                       |
+|---------------|------------------|--------------|-----------|-----------|------------------------------------------------------------------------|
+| Canny         | Bordes           | Alta         | Sí        | No        | Detecta bordes bien definidos; ideal para contornos de objetos.       |
+| Sobel         | Bordes           | Media        | Sí        | Sí        | Detecta cambios suaves de intensidad; útil para resaltar formas.      |
+| Scharr        | Bordes           | Alta         | Sí        | Sí        | Más preciso que Sobel en detalles finos; bueno para estructuras finas.|
+| Laplaciano    | Bordes           | Alta         | No        | No        | Detecta zonas donde cambia bruscamente el color; útil para resaltes.  |
+| Harris        | Esquinas         | Media        | No        | No        | Detecta esquinas o puntos donde se cruzan líneas; útil en geometría.  |
+| Shi-Tomasi    | Esquinas         | Alta         | No        | Sí        | Mejora de Harris; usado para rastrear puntos interesantes entre frames.|
+| FAST          | Esquinas         | Alta         | No        | Sí        | Muy rápido; ideal para cámaras en tiempo real (drones, móviles).      |
+| ORB           | Puntos clave     | Alta         | Sí        | Sí        | Detecta y compara puntos clave; útil para emparejar imágenes.         |
+| SIFT          | Puntos clave     | Muy Alta     | Sí        | Sí        | Encuentra detalles únicos sin importar tamaño o rotación; robusto.    |
+| LBP           | Textura          | Media        | N/A       | Sí        | Detecta patrones en la textura local; útil para clasificar materiales.|
+
 
 ---
 
